@@ -1,0 +1,235 @@
+html {
+  background: #9dced2;
+}
+html:before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  width: 50px;
+  aspect-ratio: 1;
+  background: radial-gradient(farthest-side,#0000 40%,#dddddd 44%);
+  border-radius: 27%;
+  transform: rotate(45deg);
+  left: calc(50% - 38px);
+  bottom: 180px;
+  filter: drop-shadow(0px 120px 0 #ddd) drop-shadow(0px 240px 0 #ddd) drop-shadow(0px -360px 0 #ddd) drop-shadow(120px 0 0 #ddd) drop-shadow(240px 0 0 #ddd) drop-shadow(600px 0 0 #ddd) drop-shadow(-480px 0 0 #ddd) drop-shadow(-600px 240px 0 #ddd) drop-shadow(840px -840px 0 #ddd);
+}
+body {
+  margin:0;
+  height:100vh;
+  display:grid;
+  background: linear-gradient(0deg,#e9d7c7 95px,#debd9c 0 97px,#0000 0);
+  position:relative;
+  z-index:1;
+}
+.speaker {
+  margin:auto auto 50px;
+  display:flex;
+  align-items:flex-end;
+  gap:100px;
+  position:relative;
+  z-index:0;
+}
+.speaker > div {
+  width: 128px;
+  aspect-ratio: 1;
+  display: grid;
+  position:relative;
+  background: 
+    radial-gradient(farthest-side,#0000 98%,#2962ff) 51% 15%/12px 10px,
+    radial-gradient(farthest-side,red 98%,#0000) 52.5% 19%/7px 5px,
+    radial-gradient(farthest-side,#000 98%,#0000) 51% 15%/12px 10px,
+    radial-gradient(farthest-side,#fff 98%,#0000) 61% 5%/4px 4px,
+    radial-gradient(farthest-side,#fff 98%,#0000) 42% 5%/4px 4px,
+    radial-gradient(farthest-side,#000 98%,#0000) 40% 2%/12px 12px,
+    radial-gradient(farthest-side,#000 98%,#0000) 60% 2%/12px 12px;
+  background-repeat: no-repeat;
+}
+.speaker > div:last-child {
+  background:
+    radial-gradient(farthest-side,#0000 98%,#2962ff) 51% 15%/12px 10px,
+    radial-gradient(farthest-side,red 98%,#0000) 50.5% 19%/7px 5px,
+    radial-gradient(farthest-side,#000 98%,#0000) 51% 15%/12px 10px,
+    radial-gradient(farthest-side,#fff 98%,#0000) 58% 5%/4px 4px,
+    radial-gradient(farthest-side,#fff 98%,#0000) 39% 5%/4px 4px,
+    radial-gradient(farthest-side,#000 98%,#0000) 40% 2%/12px 12px,
+    radial-gradient(farthest-side,#000 98%,#0000) 60% 2%/12px 12px;
+  background-repeat: no-repeat;
+}
+.speaker > div:before {
+  content: "Chairil";
+  border-radius: 25%;
+  background: radial-gradient(farthest-side,#0000 40%,#2962ff 41%);
+  transform: rotate(45deg);
+  z-index: -1;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: center;
+  line-height: 28px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #fff;
+}
+.speaker > div:last-child:before {
+  content:"Ulshad";
+}
+.speaker > div:after {
+  content: "";
+  position: absolute;
+  inset: 6% -50% -30%;
+  background: 
+    radial-gradient(farthest-side,#000 94%,#0000) 93% 5%/10px 12px,      
+    radial-gradient(farthest-side at top left,#0000 92%,#000 94% 98%,#0000) 90% 15%/25% 36%,
+    radial-gradient(farthest-side,#000 94%,#0000) 10% 67%/10px 12px,
+    radial-gradient(farthest-side at bottom right,#0000 92%,#000 94% 98%,#0000) 14% 47%/25% 36%,
+    radial-gradient(farthest-side,#000 94%,#0000) 67% 100%/12px 8px,
+    radial-gradient(farthest-side,#000 94%,#0000) 36% 100%/12px 8px,
+    linear-gradient(#000 0 0) 35% 96%/4px 34%,
+    linear-gradient(#000 0 0) 65% 96%/4px 34%;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.speaker > div:last-child:after {
+  background: 
+    radial-gradient(farthest-side,#000 94%,#0000) 93% 67%/10px 12px,      
+    radial-gradient(farthest-side at bottom left,#0000 92%,#000 94% 98%,#0000) 90% 47%/25% 36%,
+    radial-gradient(farthest-side,#000 94%,#0000) 10% 67%/10px 12px,
+    radial-gradient(farthest-side at bottom right,#0000 92%,#000 94% 98%,#0000) 14% 47%/25% 36%,
+    radial-gradient(farthest-side,#000 94%,#0000) 64% 100%/12px 8px,
+    radial-gradient(farthest-side,#000 94%,#0000) 33% 100%/12px 8px,
+    linear-gradient(#000 0 0) 35% 96%/4px 34%,
+    linear-gradient(#000 0 0) 65% 96%/4px 34%;
+  background-repeat: no-repeat;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  width: 164px;
+  left: calc(50% - 360px);
+  aspect-ratio: 1;
+  background: radial-gradient(farthest-side,#000 95%,#0000) 15% 85%/15px 15px no-repeat,#a96538;
+  transform: rotate(45deg);
+  bottom: 94px;
+  border-radius: 27%;
+  border: 4px solid #623d25;
+  clip-path: polygon(0 0,100% 0,100% 70%,70% 100%,0 100%);
+}
+body:after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  left: calc(50% + 200px);
+  aspect-ratio: 1;
+  background: 
+    linear-gradient(to bottom right,#0000 calc(50% - 2px),#000,#0000 calc(50% + 2px)) 24% 79%/35% 35%,
+    linear-gradient(#000 0 0) 50% 27%/2px 30%,
+    radial-gradient(farthest-side,#000 90%,#0000)50%/8px 8px,#fefefc;
+  background-repeat:no-repeat;   
+  transform: rotate(45deg);
+  bottom: 250px;
+  border-radius: 27%;
+  border: 3px solid #1b3b55;
+}
+
+.speaker:before {
+  content:"";
+  position: absolute;
+  padding: 10px 10px 40px;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 18px;
+  width: 173px;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 110%;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0 0;
+  animation: sp 90s 1s linear infinite;
+}
+
+@keyframes sp {
+  0%,6.25% {
+    content:"hai ulshad";
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),30px calc(100% - 30px),0 100%);
+    background: #ffab40; 
+  }
+  6.26%,12.5% {
+    content:"hai juga chairil";
+    clip-path: polygon(0 0,100% 0,100% 100%,calc(100% - 30px) calc(100% - 30px),0 calc(100% - 30px));
+    background: #c3e0c4;
+  }
+  12.51%,18.75% {
+    content:"mau dengar cerita gak?";
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),30px calc(100% - 30px),0 100%);
+    background: #ffab40; 
+  }
+  18.76%,25% {
+    content:"hhmm!!! cerita tentang apatuh?";
+    clip-path: polygon(0 0,100% 0,100% 100%,calc(100% - 30px) calc(100% - 30px),0 calc(100% - 30px));
+    background: #c3e0c4;
+  }
+  25.01%,31.25% {
+    content:"ini..tentang pembuatan website ini hehe";
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),30px calc(100% - 30px),0 100%);
+    background: #ffab40; 
+  }
+  31.26%,37.5% {
+    content:"apa??? jadi kita ada didalam website nih?";
+    clip-path: polygon(0 0,100% 0,100% 100%,calc(100% - 30px) calc(100% - 30px),0 calc(100% - 30px));
+    background: #c3e0c4;
+  }
+  37.51%,43.75% {
+    content:"yeppp :) bukan sulap, bukan sihir wkwkwk";
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),30px calc(100% - 30px),0 100%);
+    background: #ffab40; 
+  }
+  43.76%,50%{
+    content:"wkwkwk...eeh tapi kok bisa???";
+    clip-path: polygon(0 0,100% 0,100% 100%,calc(100% - 30px) calc(100% - 30px),0 calc(100% - 30px));
+    background: #c3e0c4;
+  }
+  50.01%,56.25% {
+    content:"jadi ceritanya gini, aku udah buat beberapa website";
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),30px calc(100% - 30px),0 100%);
+    background: #ffab40; 
+  }
+  56.26%,62.5% {
+    content:"tapi bingung sama konsep nya, akhirnya buat versi ngobrol kyk gini wkwk";
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),30px calc(100% - 30px),0 100%);
+    background: #ffab40; 
+  }
+  62.51%,68.75% {
+    content:"tapi konsep nya keren walau animasi bicaranya lama wkwkwk";
+    clip-path: polygon(0 0,100% 0,100% 100%,calc(100% - 30px) calc(100% - 30px),0 calc(100% - 30px));
+    background: #c3e0c4;
+  }
+  68.76%,75% {
+    content:"hehe gitulah, btw selamat ulang tahun ya, semoga makin berkah di umur yg sekarang";
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),30px calc(100% - 30px),0 100%);
+    background: #ffab40; 
+  }
+  75.01%,81.25% {
+    content:"menjadi pribadi yg lebih baik dari sebelumnya, pokoknya doa terbaik...Aamiiin";
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),30px calc(100% - 30px),0 100%);
+    background: #ffab40;
+  }
+  81.26%,87.5% {
+    content:"today it's your birthday, a day just for you, enjoy every minute whatever you can do 🎉";
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),30px calc(100% - 30px),0 100%);
+    background: #ffab40;
+  }
+  87.51%,93.75% {
+    content:"si paling inggris wkwkwkwk...btw makasih yaa";
+    clip-path: polygon(0 0,100% 0,100% 100%,calc(100% - 30px) calc(100% - 30px),0 calc(100% - 30px));
+    background: #c3e0c4;
+  }
+  93.76%,100% {
+    content:"wkwkkwk iya sama-sama ulshad";
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 30px),30px calc(100% - 30px),0 100%);
+    background: #ffab40; 
+  }
+}
